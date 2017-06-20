@@ -68,7 +68,7 @@ void Graph::shortestPath( int from, int to, HollowHeap heap )
                     dist[ v ] = dist[ u ] + weight;
                 }
 
-                heap.decreaseKey( dist[ v ], v );
+                heap.decreaseKey( v, dist[ v ] );
             }
         }
 
